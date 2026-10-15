@@ -14,7 +14,8 @@ dotenv.config();
 app.use(cors({
   origin: [
     "http://localhost:5173", 
-    "https://attendance-app-seven-mu.vercel.app" 
+    "https://attendance-app-delta-sooty.vercel.app",
+    process.env.FRONTEND_URL, 
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true,
